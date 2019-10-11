@@ -8,5 +8,6 @@ before_install:
   - pip install pipenv
 install:
   - pipenv install --dev
+  - pipenv run python setup.py
 script:
   - pipenv run pytest test/*
